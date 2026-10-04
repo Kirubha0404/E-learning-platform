@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>📚 LearnHub</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div>
+        <h1>Learn Anytime, Anywhere</h1>
+        <p>Build your skills with our simple and flexible online courses.</p>
+        <a href="#courses" class="btn">Explore Courses</a>
+    </div>
+</section>
+
+<section id="courses" class="section">
+
+    <h2>Popular Courses</h2>
+
+    <div class="course-container">
+
+        <div class="course-card">
+            <div class="course-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS and JavaScript from basics.</p>
+            <span>12 Lessons</span>
+            <button onclick="enroll('Web Development')">
+                Enroll Now
+            </button>
+        </div>
+
+        <div class="course-card">
+            <div class="course-icon">🐍</div>
+            <h3>Python Programming</h3>
+            <p>Learn Python programming and problem solving.</p>
+            <span>15 Lessons</span>
+            <button onclick="enroll('Python Programming')">
+                Enroll Now
+            </button>
+        </div>
+
+        <div class="course-card">
+            <div class="course-icon">📊</div>
+            <h3>Data Analytics</h3>
+            <p>Learn data analysis, visualization and insights.</p>
+            <span>10 Lessons</span>
+            <button onclick="enroll('Data Analytics')">
+                Enroll Now
+            </button>
+        </div>
+
+        <div class="course-card">
+            <div class="course-icon">🤖</div>
+            <h3>Artificial Intelligence</h3>
+            <p>Understand the basics of AI and machine learning.</p>
+            <span>14 Lessons</span>
+            <button onclick="enroll('Artificial Intelligence')">
+                Enroll Now
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+    <h2>Why Learn With Us?</h2>
+
+    <div class="features">
+
+        <div>
+            <h3>🎓 Expert Courses</h3>
+            <p>Learn from structured and easy-to-understand lessons.</p>
+        </div>
+
+        <div>
+            <h3>📱 Responsive</h3>
+            <p>Access your courses on mobile, tablet or desktop.</p>
+        </div>
+
+        <div>
+            <h3>🏆 Skill Development</h3>
+            <p>Improve your technical skills through practical learning.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="enrollment">
+
+    <h2>Course Enrollment</h2>
+
+    <form id="enrollForm">
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Student Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required
+        >
+
+        <select id="course" required>
+            <option value="">Select Course</option>
+            <option>Web Development</option>
+            <option>Python Programming</option>
+            <option>Data Analytics</option>
+            <option>Artificial Intelligence</option>
+        </select>
+
+        <button type="submit">Enroll</button>
+
+    </form>
+
+    <div id="result"></div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>📧 learnhub@gmail.com</p>
+    <p>📞 +91 98765 43210</p>
+    <p>📍 Chennai, Tamil Nadu</p>
+
+</section>
+
+<footer>
+    <p>© 2026 LearnHub E-Learning Platform</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
